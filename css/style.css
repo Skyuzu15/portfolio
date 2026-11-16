@@ -44,3 +44,22 @@ a {
     outline: 2px solid var(--cor-destaque);
     outline-offset: 3px;
 }
+
+.cabecalho {
+    background-color: var(--cor-fundo-profundo);
+    padding-block: var(--espacamento-medio);
+}
+
+nav.navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--espacamento-medio);
+}
+
+.conteudo {
+    width: 100%;
+    max-width: var(--largura-conteudo);
+    margin-inline: auto;
+    padding-inline: var(--espacamento-medio);
+}
