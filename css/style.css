@@ -45,6 +45,7 @@ a {
     outline-offset: 3px;
 }
 
+/* Cabeçalho e navegação */
 .cabecalho {
     background-color: var(--cor-fundo-profundo);
     padding-block: var(--espacamento-medio);
@@ -64,6 +65,7 @@ nav.navegacao {
     padding-inline: var(--espacamento-medio);
 }
 
+/* Seção de início */
 .inicio {
     padding-block: var(--espacamento-muito-grande);
 }
@@ -117,4 +119,189 @@ nav.navegacao {
     object-fit: cover;
     border-radius: 50%;
     border: 0.10rem solid var(--cor-destaque);
+}
+
+/* Seção de Projetos */
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento-muito-grande);
+    padding-block: var(--espacamento-muito-grande);
+}
+
+.projeto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    align-items: center;
+    gap: var(--espacamento-medio);
+
+    padding: var(--espacamento-medio);
+    border: 0.10rem solid var(--cor-superficie);
+    border-radius: 1rem;
+    background-color: var(--cor-fundo-profundo);
+}
+
+.titulo-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento-pequeno);
+    align-items: center;
+}
+
+.titulo-projetos > * {
+    margin-block: 0;
+}
+
+.moldura-imagem-projeto {
+    width: 100%;
+    max-width: 30rem;
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+
+.imagem-projeto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tecnologia p{
+    display: inline-flex;
+    color: var(--cor-texto-suave);
+    border: 0.10rem solid var(--cor-texto-suave);
+    border-radius: 0.50rem;
+    padding: var(--espacamento-pequeno);
+}
+
+.botao-projeto {
+    display: inline-flex;
+    padding: var(--espacamento-pequeno) var(--espacamento-medio);
+    background-color: var(--cor-fundo);
+    color: var(--cor-destaque);
+    border: 0.10rem solid var(--cor-destaque);
+    text-decoration: none;
+    border-radius: 0.70rem;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espacamento-pequeno);
+}
+
+.acoes-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacamento-medio);
+}
+
+.icone {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex: 0 0 auto;
+}
+
+/* Seção de Formação */
+.formacao {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento-grande);
+    padding-block: var(--espacamento-muito-grande);
+}
+
+.titulo-formacao {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento-pequeno);
+    align-items: center;
+}
+
+.titulo-formacao > * {
+    margin-block: 0;
+}
+
+.formacao-item {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    margin-inline: auto;
+
+    padding: var(--espacamento-medio);
+    border: 0.10rem solid transparent;
+    border-radius: 1rem;
+
+    background:
+    linear-gradient(var(--cor-fundo-profundo), var(--cor-fundo-profundo)) padding-box,
+    linear-gradient(135deg, var(--cor-destaque), var(--cor-superficie)) border-box;
+}
+
+.titulo-graducao {
+    color: var(--cor-texto);
+    margin-block: 0;
+}
+
+.texto {
+    text-align: center;
+    max-width: 50rem;
+    color: var(--cor-texto-suave);
+}
+
+.andamento-graduacao {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espacamento-pequeno);
+
+    padding: 0.35rem 0.75rem;
+    color: var(--cor-destaque);
+    background-color: rgba(12, 240, 179, 0.12);
+    border: 0.10rem solid rgba(12, 240, 179, 0.35);
+    border-radius: 999px;
+
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.andamento-graduacao::before {
+    content: "";
+    flex: 0 0 auto;
+
+    width: 0.50rem;
+    height: 0.50rem;
+    background-color: var(--cor-destaque);
+    border-radius: 50%;
+
+    animation: pulsar-andamento 1.8s ease-out infinite;
+}
+
+@keyframes pulsar-andamento {
+    0% {
+        box-shadow: 0 0 0 0 rgba(12, 240, 179, 0.45);
+    }
+    70%,
+    100% {
+        box-shadow: 0 0 0 0.45rem rgba(12, 240, 179, 0);
+    }
+}
+
+.cabecalho-formacao {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--espacamento-medio);
+}
+
+.icone-formacao {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+
+    width: 2.75rem;
+    height: 2.75rem;
+
+    color: var(--cor-destaque);
+    background-color: rgba(12, 240, 179, 0.12);
+    border: 0.10rem solid rgba(12, 240, 179, 0.35);
+    border-radius: 0.75rem;
+}
+
+.icone-formacao svg {
+    width: 1.4rem;
+    height: 1.4rem;
 }
