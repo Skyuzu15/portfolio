@@ -648,3 +648,14 @@ nav.navegacao {
         flex-wrap: wrap;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+
+    body {
+        animation: none;
+    }
+
+    .andamento-graduacao::before {
+        animation: none;
+    }
+}
