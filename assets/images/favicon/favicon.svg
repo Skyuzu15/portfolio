@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <clipPath id="m-clip">
+      <polygon points="-10,-10 41.75,-10 16.25,50 -10,50"/>
+    </clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0d161e"/>
+  <g transform="translate(6 17) scale(0.9)" fill="#14eba9">
+    <polygon clip-path="url(#m-clip)" points="0,40 17,0 24,0 41,40 33,40 20.5,10.6 8,40"/>
+    <polygon points="23,40 40,0 47,0 64,40 56,40 43.5,10.6 31,40"/>
+  </g>
+</svg>
